@@ -20,7 +20,8 @@ async function run() {
     console.log(`\n Firing pipeline for: ${seed}\n`);
 
     // Stage 1 -> Stage 2 -> Stage 3
-    const domains = await getLookalikes(seed);
+    // const domains = await getLookalikes(seed);
+    const domains = ["vercel.com", "stripe.com", "linear.app"];
     const executives = await getDecisionMakers(domains);
     const verifiedContacts = await resolveEmails(executives);
 
