@@ -45,7 +45,7 @@ async function run() {
 
     // Stage 1 -> Stage 2 -> Stage 3
     let domains = await getLookalikes(seed);
-    // const domains = ["vercel.com", "stripe.com", "linear.app"];
+    // const domains = ["amazon.com", "stripe.com", "linear.app"];
     if (!domains || domains.length === 0 || domains[0] === undefined) {
       console.log(
         chalk.yellow(
