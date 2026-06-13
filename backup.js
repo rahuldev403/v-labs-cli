@@ -64,7 +64,6 @@ export async function resolveEmails(executives) {
     } catch (error) {
       const status = error.response?.status;
 
-      // ⚠️ INTERVIEW FLEX: Handling explicit documentation errors
       if (status === 402) {
         throw new Error("INSUFFICIENT_BALANCE");
       }
